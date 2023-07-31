@@ -1,0 +1,529 @@
+body{
+
+	background-color: #eee;
+}
+.container{
+	width: 900px;
+}
+
+.card{
+
+	background-color: #fff;
+	border:none;
+	border-radius: 10px;
+	width: 190px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.image-container{
+
+	position: relative;
+}
+
+.thumbnail-image{
+	border-radius: 10px !important;
+}
+
+
+.discount{
+
+	background-color: red;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 4px;
+	padding-right: 4px;
+	font-size: 10px;
+	border-radius: 6px;
+	color: #fff;
+}
+
+.wishlist{
+
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.first{
+
+	position: absolute;
+	width: 100%;
+	    padding: 9px;
+}
+
+
+.dress-name{
+	font-size: 13px;
+	font-weight: bold;
+	width: 75%;
+}
+
+
+.new-price{
+	font-size: 13px;
+	font-weight: bold;
+	color: red;
+	
+}
+.old-price{
+	font-size: 8px;
+	font-weight: bold;
+	color: grey;
+}
+
+
+/*.btn{
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	padding: 3px;
+}*/
+
+.creme{
+	background-color: #fff;
+	border: 2px solid grey;
+	
+
+}
+.creme:hover {
+	border: 3px solid grey;
+}
+
+.creme:focus {
+	background-color: grey;
+
+}
+
+
+.red{
+	background-color: #fff;
+	border: 2px solid red;
+	
+}
+
+
+.red:hover {
+	border: 3px solid red;
+}
+.red:focus {
+	background-color: red;
+}
+
+
+
+.blue{
+	background-color: #fff;
+	border: 2px solid #40C4FF;
+}
+
+.blue:hover {
+	border: 3px solid #40C4FF;
+}
+.blue:focus {
+	background-color: #40C4FF;
+}
+.darkblue{
+	background-color: #fff;
+	border: 2px solid #01579B;
+}
+.darkblue:hover {
+	border: 3px solid #01579B;
+}
+.darkblue:focus {
+	background-color: #01579B;
+}
+.yellow{
+	background-color: #fff;
+	border: 2px solid #FFCA28;
+}
+.yellow:hover {
+	border-radius: 3px solid #FFCA28;
+}
+.yellow:focus {
+	background-color: #FFCA28;
+}
+
+
+.item-size{
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background: #fff;
+	border: 1px solid grey;
+	color: grey;
+	font-size: 10px;
+	text-align: center;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+
+.rating-star{
+	font-size: 10px !important;
+}
+.rating-number{
+	font-size: 10px;
+	color: grey;
+
+}
+.buy{
+	font-size: 12px;
+	color: purple;
+	font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.voutchers{
+	background-color: #fff;
+	border:none;
+	border-radius: 10px;
+	width: 190px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	overflow: hidden;
+
+}
+.voutcher-divider{
+
+	display: flex;
+
+}
+.voutcher-left{
+	width: 60%
+}
+.voutcher-name{
+	color: grey;
+	font-size: 9px;
+	font-weight: 500;
+}
+.voutcher-code{
+	color: red;
+	font-size: 11px;
+	font-weight: bold;
+}
+.voutcher-right{
+	width: 40%;	 
+	background-color: purple;
+	color: #fff;
+}
+
+.discount-percent{
+	font-size: 12px;
+	font-weight: bold;
+	position: relative;
+	top: 5px;
+}
+.off{
+	font-size: 14px;
+	position: relative;
+	bottom: 5px;
+}
+
+
+/********** Template CSS **********/
+:root {
+    --primary: #EB1616;
+    --secondary: #191C24;
+    --light: #6C7293;
+    --dark: #000000;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+
+
+/*** Spinner ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*** Button ***/
+.btn {
+    transition: .5s;
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    border-radius: 50px;
+}
+
+
+/*** Layout ***/
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    height: 100vh;
+    overflow-y: auto;
+    background: var(--secondary);
+    transition: 0.5s;
+    z-index: 999;
+}
+
+.content {
+    margin-left: 250px;
+    min-height: 100vh;
+    background: var(--dark);
+    transition: 0.5s;
+}
+
+@media (min-width: 992px) {
+    .sidebar {
+        margin-left: 0;
+    }
+
+    .sidebar.open {
+        margin-left: -250px;
+    }
+
+    .content {
+        width: calc(100% - 250px);
+    }
+
+    .content.open {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .sidebar {
+        margin-left: -250px;
+    }
+
+    .sidebar.open {
+        margin-left: 0;
+    }
+
+    .content {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+
+/*** Navbar ***/
+.sidebar .navbar .navbar-nav .nav-link {
+    padding: 7px 20px;
+    color: var(--light);
+    font-weight: 500;
+    border-left: 3px solid var(--secondary);
+    border-radius: 0 30px 30px 0;
+    outline: none;
+}
+
+.sidebar .navbar .navbar-nav .nav-link:hover,
+.sidebar .navbar .navbar-nav .nav-link.active {
+    color: var(--primary);
+    background: var(--dark);
+    border-color: var(--primary);
+}
+
+.sidebar .navbar .navbar-nav .nav-link i {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--dark);
+    border-radius: 40px;
+}
+
+.sidebar .navbar .navbar-nav .nav-link:hover i,
+.sidebar .navbar .navbar-nav .nav-link.active i {
+    background: var(--secondary);
+}
+
+.sidebar .navbar .dropdown-toggle::after {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    transition: .5s;
+}
+
+.sidebar .navbar .dropdown-toggle[aria-expanded=true]::after {
+    transform: rotate(-180deg);
+}
+
+.sidebar .navbar .dropdown-item {
+    padding-left: 25px;
+    border-radius: 0 30px 30px 0;
+    color: var(--light);
+}
+
+.sidebar .navbar .dropdown-item:hover,
+.sidebar .navbar .dropdown-item.active {
+    background: var(--dark);
+}
+
+.content .navbar .navbar-nav .nav-link {
+    margin-left: 25px;
+    padding: 12px 0;
+    color: var(--light);
+    outline: none;
+}
+
+.content .navbar .navbar-nav .nav-link:hover,
+.content .navbar .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+.content .navbar .sidebar-toggler,
+.content .navbar .navbar-nav .nav-link i {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--dark);
+    border-radius: 40px;
+}
+
+.content .navbar .dropdown-item {
+    color: var(--light);
+}
+
+.content .navbar .dropdown-item:hover,
+.content .navbar .dropdown-item.active {
+    background: var(--dark);
+}
+
+.content .navbar .dropdown-toggle::after {
+    margin-left: 6px;
+    vertical-align: middle;
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    transition: .5s;
+}
+
+.content .navbar .dropdown-toggle[aria-expanded=true]::after {
+    transform: rotate(-180deg);
+}
+
+@media (max-width: 575.98px) {
+    .content .navbar .navbar-nav .nav-link {
+        margin-left: 15px;
+    }
+}
+
+
+/*** Date Picker ***/
+.bootstrap-datetimepicker-widget.bottom {
+    top: auto !important;
+}
+
+.bootstrap-datetimepicker-widget .table * {
+    border-bottom-width: 0px;
+}
+
+.bootstrap-datetimepicker-widget .table th {
+    font-weight: 500;
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu {
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.bootstrap-datetimepicker-widget table td.active,
+.bootstrap-datetimepicker-widget table td.active:hover {
+    background: var(--primary);
+}
+
+.bootstrap-datetimepicker-widget table td.today::before {
+    border-bottom-color: var(--primary);
+}
+
+
+/*** Testimonial ***/
+.progress .progress-bar {
+    width: 0px;
+    transition: 2s;
+}
+
+
+/*** Testimonial ***/
+.testimonial-carousel .owl-dots {
+    margin-top: 24px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.testimonial-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    border: 5px solid var(--primary);
+    border-radius: 15px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-dot.active {
+    background: var(--dark);
+    border-color: var(--primary);
+}
